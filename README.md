@@ -43,6 +43,14 @@ Open up the `actions-codegen.js` file and start building your own codegen!
 For reference, check these codegens for [nodejs-zeit]() and [typescript-zeit]() out.
 
 Limitations:
-- Because the codegen script is loaded dynamically, it can't load arbitrary dependencies. 
-- If you want to load external dependecies, you can require them and bundle them into a `bundle`.
+- Because the codegen script is loaded dynamically, avoid loading external depedencies.
+- These are the libraries that are currently available that you can `require()` in your codegen script:
+  - graphql
+  - @graphql-codegen/core
+  - inflection
 - Codegen scripts support ES6
+
+## Publish your codegen for everyone so that it shows up in the CLI and the console
+
+FIXME 
+TODO
