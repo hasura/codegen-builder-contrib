@@ -8,9 +8,9 @@ Currently, the Hasura CLI and console only do codegen for actions. This is rough
 
 1. `hasura actions codegen <action-name>` or the codegen tab on the console will invoke the codegen
 
-  CLI                                     |  Console
-  :--------------------------------------:|:------------------------------------------:
-  ![cli-codegen](assets/codegen-cli.png)  |  ![console-codegen](assets/codegen-tab.png)
+	  CLI                                     |  Console
+	  :--------------------------------------:|:------------------------------------------:
+	  ![cli-codegen](assets/codegen-cli.png)  |  ![console-codegen](assets/codegen-tab.png)
 
 2. This will invoke the codegen that was set in the `config.yaml` for the CLI, or the user selected dropdown in the console
 3. Every actions codegen script accepts arguments:
@@ -18,29 +18,29 @@ Currently, the Hasura CLI and console only do codegen for actions. This is rough
   - `actions-sdl`: All the actions and custom types definition in [GraphQL SDL](https://alligator.io/graphql/graphql-sdl/)
   - `derive-payload`: When you derive an action from a Hasura mutation, this payload will be sent. In case of non-derived actions, this is `null`.
 
-  The actions codegen script should return an array of files where file is a JSON object of the following format:
+    The actions codegen script should return an array of files where file is a JSON object of the following format:
 
-  ```json
-  {
-    "name": "<filename>.<extension>",
-    "content": "<file content>"
-  }
-  ```
+	  ```json
+	  {
+	    "name": "<filename>.<extension>",
+	    "content": "<file content>"
+	  }
+	  ```
 
 4. Example:
 
-  ```js
-  const templater = (actionName, actionsSdl, derive) => {
+	  ```js
+	  const templater = (actionName, actionsSdl, derive) => {
 
-    // your codegen logic
+	    // your codegen logic
 
-    return [
-      {
-        name: "file1.js"
-      }
-    ]
-  }
-  ```
+	    return [
+	      {
+	        name: "file1.js"
+	      }
+	    ]
+	  }
+	  ```
 5. The hasura CLI or console then print the files in the directory or render the files and contents in the console UI respectively
 
 ## Getting started
