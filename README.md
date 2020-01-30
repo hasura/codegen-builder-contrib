@@ -51,15 +51,19 @@ Currently, the Hasura CLI and console only do codegen for actions. This is rough
 ## Getting started
 
 1. Clone this repo
-2. Run Hasura & Postgres
-3. Get the latest version of the Hasura CLI (or get the binaries from this repo)
-4. Update your cli-ext plugin to the latest version
+    ```
+    git clone git@github.com:hasura/codegen-builder-contrib
+    cd codegen-builder-contrib
+    ```
+2. Run Hasura & Postgres and update the `endpoint` in `hasura/config.yaml` with the Hasura endpoint (eg: `https://your-app.herokuapp.com` or `http://localhost:8080`).
+3. Get the appropriate Hasura CLI binary for your operating system from the `bin` directory of this repo.
 
 ## Load the initial schema and metadata to prepare for development
 
 There are a few tables and actions already defined. Load them up:
-1. `hasura migrate apply`
-2. `hasura metadata apply`
+1. `cd hasura`
+2. `hasura migrate apply`
+3. `hasura metadata apply`
 
 ## Run the sample codegen
 
@@ -72,7 +76,7 @@ This codegen uses a Javascript script that is present in `my-new-codegen/actions
 
 ## Start playing with the `actions-codegen.js` script
 
-Open up the `actions-codegen.js` file and start building your own codegen!
+Open up the `my-new-codegen/actions-codegen.js` file and start building your own codegen!
 
 For reference, [check these codegen for `nodejs-zeit`](https://github.com/wawhal/actions-codegen/blob/master/nodejs-zeit/codegen.js).
 
@@ -86,3 +90,4 @@ Limitations:
 
 ## Publish your codegen for everyone so that it shows up in the CLI and the console
 
+TODO FIXME
