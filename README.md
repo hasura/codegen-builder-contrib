@@ -56,7 +56,10 @@ Currently, the Hasura CLI and console only do codegen for actions. This is rough
     cd codegen-builder-contrib
     ```
 2. Run Hasura & Postgres and update the `endpoint` in `hasura/config.yaml` with the Hasura endpoint (eg: `https://your-app.herokuapp.com` or `http://localhost:8080`).
-3. Get the appropriate Hasura CLI binary for your operating system from the `bin` directory of this repo.
+3. Get the appropriate Hasura CLI binary for your operating system:
+    - [darwin](https://storage.googleapis.com/plugins-test/cli/cli-hasura-darwin-amd64)
+    - [linux](https://storage.googleapis.com/plugins-test/cli/cli-hasura-linux-amd64)
+    - [windows](https://storage.googleapis.com/plugins-test/cli/cli-hasura-windows-amd64.exe)
 
 ## Load the initial schema and metadata to prepare for development
 
