@@ -10,7 +10,7 @@ Currently, the Hasura CLI and console only do codegen for actions. This is rough
 
   ![codegen tabs picture](assets/codegen-tab.png)
   <div
-    style="display: flex; align-items: center; justify-content: space-around;"
+    style="display: flex; flex-direction: row; align-items: center; justify-content: space-around;"
   >
     <div>
       <img src="assets/codegen-tab.png">
