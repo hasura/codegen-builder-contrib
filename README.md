@@ -8,17 +8,6 @@ Currently, the Hasura CLI and console only do codegen for actions. This is rough
 
 1. `hasura actions codegen <action-name>` or the codegen tab on the console will invoke the codegen
 
-  <div
-    style="display: flex; flex-direction: row; align-items: center; justify-content: space-around;"
-  >
-    <div>
-      <img src="assets/codegen-tab.png">
-    <div>
-    <div>
-      <img src="assets/codegen-cli.png">
-    <div>
-  </div>
-
   CLI                                     |  Console
   :--------------------------------------:|:------------------------------------------:
   ![cli-codegen](assets/codegen-cli.png)  |  ![console-codegen](assets/codegen-tab.png)
