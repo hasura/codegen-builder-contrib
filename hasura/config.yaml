@@ -1,0 +1,10 @@
+actions:
+  handler_webhook_baseurl: http://localhost:3000
+  kind: synchronous
+  codegen:
+    framework: custom-name
+    output_dir: ../my-new-codegen/codegen-output/
+    uri: ../my-new-codegen/actions-codegen.js
+endpoint: http://localhost:8080
+metadata_directory: metadata
+version: "2"

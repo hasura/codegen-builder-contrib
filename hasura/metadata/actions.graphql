@@ -1,0 +1,7 @@
+type Mutation {
+  add(numbers: [Int]): AddResult
+}
+
+type AddResult {
+  sum: Int
+}
