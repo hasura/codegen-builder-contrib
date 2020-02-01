@@ -3,7 +3,7 @@ actions:
   kind: synchronous
   codegen:
     framework: custom-name
-    output_dir: ../my-new-codegen/codegen-output/
+    output_dir: ../codegen-output/
     uri: ../my-new-codegen/actions-codegen.js
 endpoint: http://localhost:8080
 metadata_directory: metadata
