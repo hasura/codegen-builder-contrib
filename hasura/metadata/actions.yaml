@@ -1,5 +1,5 @@
 actions:
-- name: add
+- name: addNumbers
   definition:
     kind: synchronous
     handler: http://localhost:3000/api/add

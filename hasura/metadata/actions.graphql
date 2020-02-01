@@ -1,5 +1,5 @@
 type Mutation {
-  add(numbers: [Int]): AddResult
+  addNumbers (numbers: [Int]): AddResult
 }
 
 type AddResult {

@@ -75,7 +75,10 @@ There are a few tables and actions already defined. Load them up:
 
 We have setup a basic codegen (`actions-codegen.js`) in the `my-new-codegen` directory. To try it out:
 
-1. Run `hasura actions codegen add`
+1. Run the codegen for the existing mutation `addNumbers`
+  ```
+  hasura actions codegen addNumbers
+  ```
 2. You should see a `my-new-codegen/codegen-output/file1.md` and a `my-new-codegen/codegen-output/file2.md`.
 
 This codegen uses a Javascript script that is present in `my-new-codegen/actions-codegen.js`
