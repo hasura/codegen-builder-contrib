@@ -99,4 +99,12 @@ Limitations:
 
 ## Publish your codegen for everyone so that it shows up in the CLI and the console
 
-TODO FIXME
+Let's say you have to add a new codegen for a framework called `my-new-framework`.
+
+1. Clone [this repo](https://github.com/hasura/codegen-assets)
+2. Edit `frameworks.json` to include your `{ "name": "my-new-codegen" }`
+3. Create a new directory named `my-new-codegen` and add your codegen file to that directory as `actions-codegen.js`.
+
+### Starter Kit (optional)
+
+You can also include a starterkit for `my-new-framework`. Add the starter kit as a directory called `starter-kit` to the `my-new-codegen/` directory and edit `frameworks.json` to change `{"name": "my-new-framework"}` to `{"name": "my-new-framework", "hasStarterKit": true }`. 
